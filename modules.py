@@ -55,6 +55,21 @@ AVAILABLE_MODULES = [
         ]
     },
     {
+        'name': 'recently_added_movies',
+        'label': 'Recently added movies',
+        'description': 'Shows you movies recently added to your library.',
+        'static': False,
+        'poll': 350,
+        'delay': 0,
+        'settings': [
+            {
+                'key': 'num_recent_movies',
+                'value': 1,
+                'description': 'Number of movies to display',
+            },
+        ]
+    },
+    {
         'name': 'sabnzbd',
         'label': 'SABnzbd+',
         'description': 'Shows you information about your SABnzbd+ downloads.',
